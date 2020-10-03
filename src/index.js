@@ -15,9 +15,9 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  if (array.length == 0)
-  return 0;
-  else
+    if (array == 'undefined') {
+        return 0;
+    }
  var max = array[0];
    for (var i = 1; i < array.length; i++) {
     if (array[i] > max) {
@@ -28,9 +28,9 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
-  if (array.length == 0)
-  return 0;
-  else
+    if (array == 'undefined') {
+        return 0;
+    }
   var l = array.length;
   var sum = array[0];
   for (var i = 1; i < array.length; i++) {
